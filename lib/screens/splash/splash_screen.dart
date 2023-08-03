@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:healthify/screens/login/login_screen.dart';
+
 
 import '../../config/constants.dart';
-// import '../signup/signup_screen.dart';
+import '../signup/signup_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -53,7 +53,7 @@ class SplashScreen extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.of(context).pushNamed(LoginScreen.routeName);
+                      Navigator.of(context).pushNamed(SignupScreen.routeName);
                     },
                     child: const Text('Get Started'),
                   ),
