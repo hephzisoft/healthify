@@ -15,6 +15,7 @@ class App extends StatelessWidget {
       routes: {
         '/': (ctx) => const SplashScreen(),
         SignupScreen.routeName: (ctx) => const SignupScreen(),
+
       },
     );
   }
