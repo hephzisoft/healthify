@@ -6,13 +6,13 @@ class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
 
-  static const routeName = '/splash-screen';
+
 
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
       body: Center(
-
+         child:   Text('Welcome to this Application')
       ),
     );
   }
