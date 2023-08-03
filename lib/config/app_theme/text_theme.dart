@@ -10,7 +10,7 @@ class AppTextTheme {
     titleSmall: TextStyle(
       fontFamily: 'Bruno Asc',
       fontWeight: FontWeight.bold,
-      fontSize: 18,
+      fontSize: 16,
     ),
     bodyLarge: TextStyle(
       fontFamily: 'kanit',
