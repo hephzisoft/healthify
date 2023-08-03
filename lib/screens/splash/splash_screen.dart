@@ -14,9 +14,10 @@ class SplashScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+
               children: [
                 SizedBox(
                   width: 200,
@@ -25,8 +26,9 @@ class SplashScreen extends StatelessWidget {
                 const Text('Welcome to this Application'),
               ],
             ),
+            Spacer(),
             Container(
-              alignment: Alignment.bottomCenter,
+              width: double.infinity,
               child: FilledButton(
                 style: FilledButton.styleFrom(
                   backgroundColor: primaryColor,
