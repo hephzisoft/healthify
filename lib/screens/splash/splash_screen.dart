@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../config/constants.dart';
+import '../signup/signup_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -11,12 +15,19 @@ class SplashScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(width: 200, child: SvgPicture.asset(logoSvg)),
             const Text('Welcome to this Application'),
             Container(
-              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
               width: double.infinity,
+              // alignment: Alignment.bottomCenter,
               child: FilledButton(
-                onPressed: () {},
+                style: FilledButton.styleFrom(
+                  backgroundColor: primaryColor,
+                ),
+                onPressed: () {
+                  Navigator.of(context).pushNamed(SignupScreen.routeName);
+                },
                 child: const Text('Get Started'),
               ),
             )

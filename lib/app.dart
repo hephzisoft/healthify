@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'config/theme.dart';
+import 'screens/signup/signup_screen.dart';
 import 'screens/splash/splash_screen.dart';
 
 class App extends StatelessWidget {
@@ -13,6 +14,7 @@ class App extends StatelessWidget {
       theme: AppTheme.themeData,
       routes: {
         '/': (ctx) => const SplashScreen(),
+        SignupScreen.routeName: (ctx) => const SignupScreen(),
       },
     );
   }
