@@ -7,5 +7,10 @@ class AppTextTheme {
       fontSize: 20,
       fontWeight: FontWeight.bold,
     ),
+    titleSmall: TextStyle(
+      fontFamily: 'kanit',
+      fontWeight: FontWeight.bold,
+      fontSize: 18,
+    )
   );
 }
